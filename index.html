@@ -40,23 +40,18 @@
             <a href="membership.html">Membership</a>
             <span class="navbar-text ml-auto">
                 <!-- Button to open the modal login form -->
-            <button onclick="document.getElementById('loginModal').style.display='block'">Login<i class="fa fa-sign-in"></i>
-                  </button>
+            <a role = "button" id="#loginBtn" data-toggle="modal" data-target="#loginModal"><i class="fa fa-sign-in"></i>Login</a>
             </span>
         </div>
     </div>
 
  <!-- Modal -->
- <div id="loginModal" class="modal fade" role="dialoge">
-    <span onclick="document.getElementById('loginModal').style.display='none'"
-  class="close" title="Close Modal">&times;</span>
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header bg-info text-white">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">   
-                <h3 class="modal-title" id="loginModal">Login</h3>
-                <span aria-hidden="true">&times;</span>
-                </button>
+     <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
             <div class="modal-body">
                 <form role="form">
@@ -160,17 +155,20 @@
     </div>
    
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-4 col-sm-2 offset-1">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Sites</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
+        <div class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-sm-2 offset-1">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="Aboutus.html">About</a></li>
+                            <li><a href="games.html">Games</a></li>
+                            <li><a href="store.html">Store</a></li>
+                            <li><a href="membership.html">Membership</a></li>
+                            <li><a href="contactus.html">Contact Us</a></li>
+                        </ul>
+                    </div>
                 <div class="col-6 col-sm-5 text-center">
                     <h5>Social</h5>
                     <a href="http://instagram.com/">Instagram</a>
@@ -189,18 +187,6 @@
     <script src="node_modules\popper.js\dist\popper.js"></script>
     <script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
     <script src="js/java.js"></script>
-
-    <script>
-        // Get the modal
-        var modal = document.getElementById('loginModal');
-        
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-        </script>
         
 
 </body>
